@@ -138,7 +138,15 @@ article #features {
   padding-top: 10px;
 }
 
-code, tt, pre {
+code, tt, pre, blockquote {
   font-size: 14px;
   line-height: 1.4em;
+}
+
+.container blockquote {
+    border-left: solid 5px #ccc;
+    margin: 10px 0;
+    padding-left: 10px;
+    color: #888;
+    font-size: 16px;
 }
