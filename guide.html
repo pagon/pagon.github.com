@@ -44,19 +44,64 @@
   </nav>
   <article>
     <div class="container">
-<h2 id="-">安装</h2>
-<p>已有项目</p>
-<pre><code>composer.phar require pagon/pagon=&quot;*&quot;
-</code></pre><p>新项目（使用 <a href="https://github.com/pagon/app"><code>pagon/app</code></a> skelton创建应用）</p>
-<pre><code>composer.phar create-project pagon/app myapp
-</code></pre><h2 id="-">使用</h2>
-<h3 id="hello-world">Hello world</h3>
-<pre><code class="lang-php">$app = new App();
+<h1 id="-">安装</h1>
+<h2 id="-">发行版</h2>
+<p><a href="https://github.com/hfcorriez/pagon/releases">下载最新版</a></p>
+<p>Git下载：</p>
+<pre><code>git clone https://github.com/hfcorriez/pagon
+</code></pre><h2 id="composer">Composer</h2>
+<h3 id="-">已有项目</h3>
+<pre><code>$ composer.phar require pagon/pagon=&quot;*&quot;
+</code></pre><h3 id="-">新项目</h3>
+<blockquote>
+<p>（使用 <a href="https://github.com/pagon/app"><code>pagon/app</code></a> skelton创建应用）</p>
+</blockquote>
+<pre><code>$ composer.phar create-project pagon/app myapp
+</code></pre><h2 id="-">单文件</h2>
+<p>下载</p>
+<pre><code>wget https://github.com/hfcorriez/pagon/raw/0.8.0-dev/pack/pagon.core.php
+</code></pre><p>使用</p>
+<pre><code class="lang-php">require(&#39;pagon.core.php&#39;);
 
-// 使用匿名函数实现控制器
+$app = Pagon\App::create();
+</code></pre>
+<h1 id="-">入门</h1>
+<h2 id="hello-world">Hello world</h2>
+<pre><code class="lang-php">$app = App::create();
+
 $app-&gt;get(&#39;/&#39;, function($req, $res){
-   $res-&gt;end(&#39;Hello world&#39;);
+   $res-&gt;write(&#39;Hello world&#39;);
 });
+
+$app-&gt;run();
+</code></pre>
+<h2 id="-">命令行模式</h2>
+<pre><code class="lang-php">$app = App::create();
+
+$app-&gt;command(&#39;hello&#39;, function($req, $res){
+   $res-&gt;write(&#39;Hello world&#39;);
+});
+
+$app-&gt;command(&#39;help&#39;, function($req, $res){
+   $res-&gt;write(&#39;Help Guide&#39;);
+});
+
+$app-&gt;run();
+</code></pre>
+<blockquote>
+<p>命令行模式仅能在命令行下运行</p>
+</blockquote>
+<h2 id="api">API</h2>
+<pre><code class="lang-php">$app = App::create();
+
+$app-&gt;get(&#39;/users&#39;, function($req, $res){
+  // 使用JSON输出
+  $res-&gt;json(array(
+    array(&#39;name&#39; =&gt; &#39;hfcorriez&#39;, &#39;id&#39; =&gt; 1)
+  ));
+});
+
+$app-&gt;run();
 </code></pre>
     </div>
   </article>
