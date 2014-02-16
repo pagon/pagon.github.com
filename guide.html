@@ -59,7 +59,7 @@
 <pre><code>$ composer.phar require pagon/framework=&quot;*&quot;
 </code></pre><h1 id="-">使用</h1>
 <h2 id="hello-world">Hello world</h2>
-<pre><code class="lang-php">$app = App::create();
+<pre><code class="lang-php">$app = Pagon::create();
 
 $app-&gt;get(&#39;/&#39;, function($req, $res){
    $res-&gt;write(&#39;Hello world&#39;);
@@ -68,7 +68,7 @@ $app-&gt;get(&#39;/&#39;, function($req, $res){
 $app-&gt;run();
 </code></pre>
 <h2 id="-">命令行模式</h2>
-<pre><code class="lang-php">$app = App::create();
+<pre><code class="lang-php">$app = Pagon::create();
 
 $app-&gt;command(&#39;hello&#39;, function($req, $res){
    $res-&gt;write(&#39;Hello world&#39;);
@@ -84,7 +84,7 @@ $app-&gt;run();
 <p>命令行模式仅能在命令行下运行</p>
 </blockquote>
 <h2 id="api">API</h2>
-<pre><code class="lang-php">$app = App::create();
+<pre><code class="lang-php">$app = Pagon::create();
 
 $app-&gt;get(&#39;/users&#39;, function($req, $res){
   // 使用JSON输出
