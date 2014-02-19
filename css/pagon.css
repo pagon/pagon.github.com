@@ -1,6 +1,8 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: Calibri, Arial Black, sans-serif;
 }
 
@@ -127,6 +129,8 @@ article #features {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 #features .title {
@@ -149,4 +153,8 @@ code, tt, pre, blockquote {
     padding-left: 10px;
     color: #888;
     font-size: 16px;
+}
+
+embed {
+  display: none;
 }
