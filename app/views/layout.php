@@ -55,7 +55,7 @@
                 </ul>
             </div>
             <div id="footer" class="text-center">
-                Copyright &copy; 2011-2014 Pagon Framework<br/>
+                Copyright &copy; 2011-2014 Pagon<br/>
                 Author: <a href="mailto:hfcorriez@gmail.com">@hfcorriez</a>
                 Proudly powered by <a href="https://github.com/hfcorriez/pagon">Pagon</a>
             </div>
