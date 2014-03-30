@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Pagon Framework</title>
+    <title>Pagon - Modern PHP Framework</title>
     <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/pagon.css">
     <script src="/lib/jquery/jquery.min.js"></script>
