@@ -53,7 +53,8 @@ a {
   height: 50px;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 5px;
+  left: 0;
 }
 
 #nav #menu {
