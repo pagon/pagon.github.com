@@ -1,0 +1,24 @@
+{
+  "name": "pagon/pagon",
+  "description": "The Pagon Framework",
+  "keywords": ["framework", "pagon", "skelton"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Corrie Zhao",
+      "email": "hfcorriez@gmail.com"
+    }
+  ],
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": ">=5.3.9",
+    "pagon/framework": "dev-master",
+    "react/http": "0.3.*",
+    "erusev/parsedown": "*"
+  },
+  "require-dev": {
+    "pagon/composer-packer": "0.1.x"
+  }
+}

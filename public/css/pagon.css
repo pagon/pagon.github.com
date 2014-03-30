@@ -1,0 +1,200 @@
+html, body {
+  height: 100%;
+  font-family: Calibri, Arial Black, sans-serif;
+  width: 100%;
+}
+
+a {
+  color: #E44A2B;
+}
+
+#wrapper {
+  background: #2B2B2B;
+  color: #fff;
+  height: 100%;
+}
+
+#wrapper > .row {
+  height: 100%;
+  position: relative;
+}
+
+#nav {
+  height: 100%;
+}
+
+#nav #github {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px auto;
+  opacity: 0.7;
+  border-bottom: solid 1px #ccc;
+  font-weight: bold;
+}
+
+#nav #github a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav #logo {
+  width: 100%;
+}
+
+#nav #logo img {
+  width: 100%;
+}
+
+#nav #footer {
+  font-size: 12px;
+  color: #888888;
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#nav #menu {
+}
+
+#nav #menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#nav #menu li {
+  text-align: right;
+}
+
+#nav #menu a {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  height: 35px;
+  line-height: 35px;
+}
+
+#nav #menu a:hover, #nav #menu a.highlight {
+  color: #E44A2B;
+}
+
+#article {
+  height: 100%;
+  font-size: 16px;
+  background: #fcfcfc;
+  color: #333;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+#article .container {
+  margin: 30px;
+}
+
+#article .hero {
+  padding: 20px;
+  margin: 20px auto;
+  background: #fff;
+  font-size: 20px;
+}
+
+#article h1, h2, h3 {
+  color: #E44A2B;
+}
+
+#article #features {
+  padding: 0;
+}
+
+#features .wrap {
+  margin: 20px;
+}
+
+#features li {
+  background: #e3e3e3;
+  width: 280px;
+  height: 150px;
+  overflow: hidden;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+#features .title {
+  font-size: 20px;
+  color: #E44A2B;
+}
+
+#features .content {
+  padding-top: 10px;
+}
+
+.wrap blockquote {
+  border-left: solid 5px #ccc;
+  margin: 10px 0;
+  padding-left: 10px;
+  color: #888;
+  font-size: 16px;
+}
+
+embed {
+  display: none;
+}
+
+pre {
+  padding: 0;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  #nav {
+    position: absolute;
+    left: -33.33333%;
+    top: 0;
+    z-index: 1000;
+    background: #2B2B2B;
+  }
+
+  #toggle {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 100001;
+    display: block !important;
+    color: #fff;
+    background: #E44A2B;
+    padding: 10px;
+  }
+
+  #article {
+    width: 100%;
+  }
+
+  #nav #menu a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  #nav #github {
+    height: 20px;
+    line-height: 20px;
+    font-size: 9px !important;
+  }
+
+  #features li {
+    width: 100%;
+  }
+
+  #nav #footer {
+    font-size: 8px;
+  }
+}
