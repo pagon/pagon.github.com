@@ -25,7 +25,34 @@ a {
   z-index: 1000;
   height: 100%;
   border-right: solid 1px #CACFC1;
-  background: #2b2b2b;
+}
+
+#nav #backimg {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background: url("/img/cover.jpg") center;
+}
+
+#nav #content {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  padding: 15px;
+  background: #2B2B2B;
+  opacity: 0.8;
 }
 
 #nav #github {

@@ -39,6 +39,8 @@
         <span id="toggle" class="glyphicon glyphicon-th-list hide"></span>
 
         <div id="nav" class="col-md-3 col-xs-4">
+            <div id="backimg"></div>
+            <div id="content">
             <div id="logo">
                 <img src="/img/logo.png"/>
             </div>
@@ -62,6 +64,7 @@
                 Copyright &copy; 2011-2014 Pagon<br/>
                 Author: <a href="mailto:hfcorriez@gmail.com">@hfcorriez</a>
                 Proudly powered by <a href="https://github.com/hfcorriez/pagon">Pagon</a>
+            </div>
             </div>
         </div>
         <div id="article" class="col-md-9 col-xs-12 col-md-offset-3">
