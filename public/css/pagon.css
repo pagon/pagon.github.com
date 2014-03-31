@@ -19,12 +19,13 @@ a {
 }
 
 #nav {
-  height: 100%;
   position: fixed;
   left: 0;
   top: 0;
-  background: #2B2B2B;
   z-index: 1000;
+  height: 100%;
+  border-right: solid 1px #CACFC1;
+  background: #2b2b2b;
 }
 
 #nav #github {
@@ -88,10 +89,9 @@ a {
 }
 
 #article {
-  height: 100%;
   font-size: 16px;
-  background: #fcfcfc;
   color: #333;
+  background: #e7e8e5;
 }
 
 #article blockquote {
@@ -123,7 +123,7 @@ a {
 }
 
 #features li {
-  background: #e3e3e3;
+  background: #CACFC1;
   width: 280px;
   height: 150px;
   overflow: hidden;

@@ -100,5 +100,5 @@ $app-&gt;run();
         </div>
       </div>
     </li>
-    <div class="clear"></div>
+    <div class="clearfix"></div>
   </ul>
