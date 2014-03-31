@@ -9,7 +9,6 @@ a {
 }
 
 #wrapper {
-  background: #2B2B2B;
   color: #fff;
   height: 100%;
 }
@@ -21,6 +20,11 @@ a {
 
 #nav {
   height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #2B2B2B;
+  z-index: 1000;
 }
 
 #nav #github {
@@ -88,8 +92,6 @@ a {
   font-size: 16px;
   background: #fcfcfc;
   color: #333;
-  overflow: hidden;
-  overflow-y: auto;
 }
 
 #article blockquote {
@@ -160,15 +162,12 @@ pre {
 /* Responsive */
 @media (max-width: 680px) {
   #nav {
-    position: absolute;
     left: -33.33333%;
-    top: 0;
-    z-index: 1000;
     background: #2B2B2B;
   }
 
   #toggle {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 50%;
     z-index: 100001;

@@ -23,9 +23,13 @@
         $(document).ready(function () {
             var showMenu = false;
             $('#toggle').click(function () {
-                $('#nav').animate({left: showMenu ? '0' : '-33.3333%'});
+                $('#nav').animate({left: !showMenu ? '0' : '-33.3333%'});
                 showMenu = !showMenu;
-            })
+            });
+
+            $(window).resize(function () {
+                $('#nav').css({left: ''});
+            });
         })
     </script>
 </head>
@@ -60,7 +64,7 @@
                 Proudly powered by <a href="https://github.com/hfcorriez/pagon">Pagon</a>
             </div>
         </div>
-        <div id="article" class="col-md-9 col-xs-8">
+        <div id="article" class="col-md-9 col-xs-12 col-md-offset-3">
             <?php echo $content; ?>
         </div>
     </div>
