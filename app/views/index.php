@@ -1,6 +1,6 @@
       <h1>Hello world!</h1>
       <h2>安装</h2>
-<pre><code class="lang-bash">$ composer.phar create-project pagon/pagon myapp
+<pre><code class="lang-bash">$ composer.phar create-project pagon/pagon="dev-master" myapp
 </code></pre>
       <h2>编写</h2>
 <pre><code class="lang-php">$app = Pagon::create();
