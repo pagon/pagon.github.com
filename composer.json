@@ -15,6 +15,7 @@
   "require": {
     "php": ">=5.3.9",
     "pagon/framework": "dev-master",
+    "pagon/cli": "dev-master",
     "react/http": "0.3.*",
     "erusev/parsedown": "*"
   },
