@@ -14,9 +14,8 @@
   },
   "require": {
     "php": ">=5.3.9",
-    "pagon/framework": "dev-master",
-    "pagon/cli": "dev-master",
-    "react/http": "0.3.*",
+    "pagon/framework": "0.8.*",
+    "pagon/cli": "0.8.*",
     "erusev/parsedown": "*"
   },
   "require-dev": {
