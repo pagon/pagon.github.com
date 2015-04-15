@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Pagon - Modern PHP Framework</title>
-    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/pagon.css">
-    <script src="/lib/jquery/jquery.min.js"></script>
-    <script src="/lib/highlight/js/highlight.pack.js"></script>
-    <link rel="stylesheet" href="/lib/highlight/css/highlight.css">
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/pagon.css">
+    <script src="/assets/lib/jquery/jquery.min.js"></script>
+    <script src="/assets/lib/highlight/js/highlight.pack.js"></script>
+    <link rel="stylesheet" href="/assets/lib/highlight/css/highlight.css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
-    <link rel="stylesheet" href="css/ie.css">
+    <link rel="stylesheet" href="/assets/css/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script type="text/javascript">
@@ -42,7 +42,7 @@
             <div id="backimg"></div>
             <div id="content">
             <div id="logo">
-                <img src="/img/logo.png"/>
+                <img src="/assets/img/logo.png"/>
             </div>
             <div id="github">
                 <a href="https://github.com/hfcorriez/pagon">
