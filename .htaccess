@@ -1,0 +1,13 @@
+# Disable directory browsing
+Options All -Indexes
+
+# Set the default file for indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+	# mod_rewrite rules
+	RewriteEngine on
+
+	RewriteRule ^/$ /public/index.php
+  RewriteRule ^/(.*)$ /public/$1
+</IfModule>
